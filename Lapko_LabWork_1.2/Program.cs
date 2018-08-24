@@ -87,7 +87,7 @@ namespace Lapko_LabWork_1._2
                 return 0;
             }
 
-            return array[index] + getSumRecursion(array, index + 1);
+            return array[index] + getSumRecursion(array, ++index);
         }
 
         public static int getSumRecursion(List<int> list, int index = 0)
@@ -97,7 +97,7 @@ namespace Lapko_LabWork_1._2
                 return 0;
             }
 
-            return list[index] + getSumRecursion(list, index + 1);
+            return list[index] + getSumRecursion(list, ++index);
         }
 
     }
